@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#fff8f0,#ffe5cc,#ffffff);
+    color:#333;
+}
+
+/* NAVBAR */
+nav{
+    background: linear-gradient(90deg,#ff9933,#ff6600,#ffcc66);
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:white;
+    font-size:22px;
+    letter-spacing:2px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:6px 12px;
+    border-radius:5px;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#ff6600;
+}
+
+/* LOGO */
+.logo{
+    text-align:center;
+    margin:30px 0;
+}
+
+.logo img{
+    width:300px;
+}
+.previous{
+    text-align:left;
+    padding:10px 30px;
+}
+
+.previous a{
+    text-decoration:none;
+    background:#ff6600;
+    color:white;
+    padding:6px 15px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.previous a:hover{
+    background:#ff9933;
+}
+h1{
+    text-align:center;
+    margin:20px 0;
+    color:#ff6600;
+    font-size:30px;
+}
+.grid{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:30px 0;
+}
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:2px solid #ffcc66;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#ff6600;
+}
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+.why{
+padding:40px;
+text-align:center;
+}
+
+.reason{
+background:white;
+margin:20px auto;
+padding:20px;
+width:70%;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.reason h3{
+color:#ea580c;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+    background:linear-gradient(90deg,#ff9933,#ff6600,#ffcc66);
+    color:white;
+    font-weight:bold;
+}
+
+/* Scroll-to-Top Button - small perfect circle */
+#topBtn {
+  display: none;               /* Hidden by default */
+  position: fixed;
+  bottom: 80px;                /* Distance from bottom */
+  left: 50%;                   /* Center horizontally */
+  transform: translateX(-50%);
+  z-index: 99;
+  width: 50px;                 /* Circle width */
+  height: 50px;                /* Circle height = width for perfect circle */
+  border-radius: 50%;          /* Makes it circular */
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  font-size: 24px;             /* Arrow size */
+  text-align: center;
+  line-height: 50px;           /* Center arrow vertically */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+#topBtn:hover {
+  background-color: #ff6600;
+  transform: translateX(-50%) scale(1.1); /* Slight zoom on hover */
+}
